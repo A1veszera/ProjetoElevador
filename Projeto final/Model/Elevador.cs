@@ -44,7 +44,7 @@ namespace ProjetoElevador.Model
 
                 if (opcao == 1)
                 {
-                    Console.WriteLine("Uma pessoa entrou no levador" + " Quantidade: " + pessoas++);
+                    Console.WriteLine("Uma pessoa entrou no levador" + " Quantidade: " + pessoas);
                     pessoas = Entrar(pessoas);
                     if (pessoas > capacidade)
                     {
@@ -58,7 +58,7 @@ namespace ProjetoElevador.Model
                     Console.WriteLine("Uma pessoa saiu do elevador" + " Quantidade: " + pessoas);
                     if (pessoas < terreo)
                     {
-                        pessoas = terreo + 1;
+                        pessoas = terreo;
                         Console.WriteLine(" Elevador Vazio");
                     }
                 }
